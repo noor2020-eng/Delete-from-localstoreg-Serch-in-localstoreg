@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Delete $ Serch</title>
+    <script src="delete&serch.js" defer></script>
+  </head>
+  <body>
+    <form id="noor" action="" method="post">
+        
+      <div>
+        <label> User name </label><br>
+        <input type="text" name="username" id="username" placeholder="user name" required>
+      </div> <br>
+      <div>
+        <label> password </label><br>
+        <input type="password" name="password" id="password" placeholder="password" required>
+      </div> <br>
+      <div>
+        <label> password confirm </label><br>
+        <input type="password" name="password confirm" id="passwordCon" placeholder="password confirm" required>
+      </div> <br>
+      <div>
+        <label> Email </label><br>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+      </div> <br>
+      <div>
+        <label> Phone </label><br>
+        <input type="text" name="phone" id="phone" placeholder="phone" required>
+      </div> <br>
+      <div>
+        <label> Gender </label><br>
+        <select id="gender" name="gender">
+          <option value="0">Male</option>
+          <option value="1">Female</option>
+        </select>
+      </div> <br>        
+       
+      <button id="reg">submit</button>
+      <div>
+        <table id="myTable" border="1px solid" style="width:100% ">
+          <tr>
+            <th>UserName</th>
+            <th>password</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>gender</th>
+          </tr>
+      </div>
+      <div>
+        <label >Serch by Name</label>
+        <input type="text" id="serchName" name="serchName" placeholder="Name">
+        <button id="nserch">Serch</button>
+        <ul id="listOfSerch"></ul>
+      </div>
+
+  </body>
+</html>
