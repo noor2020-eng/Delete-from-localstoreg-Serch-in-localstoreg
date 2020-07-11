@@ -1,6 +1,6 @@
 
 var reg=document.getElementById("reg");
-var serchName=document.getElementById("serchName");
+var searchName=document.getElementById("searchName");
 var input=[];
 var elementLocal=[];
 var object={};
@@ -65,8 +65,11 @@ reg.addEventListener('click',function(e){
                 input.push(object);
                 x.addEventListener('click',function(e){
                     e.preventDefault()
+                   // var con = confirm("do you want to delete this object?!");
+                    
                     localStorage.removeItem(x.id);
                     document.getElementById(r1.id).remove();
+                    
                 });
                 
             }
@@ -100,13 +103,13 @@ for (var i = 0; i < localStorage.length; i++) {
     values.push(value);
  }
 
-var ns=document.getElementById("nserch");
+var btnSerch=document.getElementById("btnSerch");
 
-ns.addEventListener('click',function(e){
+btnSerch.addEventListener('click',function(e){
 
     e.preventDefault()
     values.forEach(element => {
-        var i=serchName.value;
+        var i=searchName.value;
         var j=(JSON.parse(element)).username;
         if(i==j ){
             console.log(element);
